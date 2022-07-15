@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.main_wrapper {
+    background-color: #E8E8E8;
+    height: 41.5em;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.analysis{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 79%;
+    justify-content: space-evenly;
+}
+.block{
+    display: flex;
+    position: relative;
+    height: 100%;
+    justify-content: space-between;
+}
+#weather{
+    background-image: url('images/cloud1.jpg');
+    width:21%;
+    background-position: center;
+}
+.weather_body{
+    margin-top: 30%;
+    margin-left: 8px;
+    line-height: 40px;
+    position: absolute;
+}
+.bi-clouds-fill,.bi-calendar-fill,.bi-geo-alt-fill{
+    font-size: 29px;
+}
+#calender_icon,#location_icon{
+    display: flex;
+    justify-content: flex-start;
+}
+#name,#city{
+    font-size: 18px;
+    font-weight: 600;
+}
+#name,#date,#city{
+    position: relative;
+    left:20px;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 600;
+}
+#time{
+    position: relative;
+    left:30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+#Temperature{
+    font-size: 37px;
+    position: relative;
+    bottom:30px;
+}
+#country {
+    position: relative;
+    left:30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.class1 {
+    position: absolute;
+    bottom: 150px;
+    font-size: 60px;
+    display:flex;
+    font-family: Arial;
+    color: rgb(3, 2, 4);
+}
+.class2 {
+    font-size: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 93px;
+}
+span {
+    content: "\00B0";
+}  
+
+.class3 {
+    position: absolute;
+    bottom:125px;
+    left:60px;
+    font-size: 17px;
+    display:flex;
+    font-family: Arial;
+    color: rgb(3, 2, 4);
+}
+.class4 {
+    position: absolute;
+    bottom:90px;
+    left:60px;
+    font-size: 17px;
+    display:flex;
+    font-family: Arial;
+    color: rgb(3, 2, 4);
+}
+.class5 {
+    display:flex;
+    font-family: Arial;
+    color: rgb(3, 2, 4);
+    font-weight: bold;
+}
+.class6 {
+    position: absolute;
+    bottom:55px;
+    left:60px;
+    font-size: 17px;
+    display:flex;
+    font-family: Arial;
+    color: rgb(3, 2, 4);
+}
+
+.chartBox{
+    height: 41%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+#myChart{
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+}
+.data_display{
+    background-color: white;
+    width: 100%;
+    height: 52%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.display_content{
+    padding: 20px;
+}
+.highlights{
+    color: slategray;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+.row1,.row2{
+    display: flex;
+    justify-content:space-evenly ;
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#E8E8E8;
+    width: 250px;
+    height: 170px;
+    justify-content: space-evenly;
+}
+.box4,.box5,.box6{
+    height: 120px;
+}
+.box1_content,.box2_content,.box3_content,.box4_content,.box5_content,.box6_content{
+    color: black;
+    font-weight: 600;
+    line-height: 30px;
+}
+.prog1{
+    position: relative;
+}
+.prog1_value,.prog2_value,.prog3_value{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 30px;
+    color: #87CEEB;
+}
+.prog4_value,.prog5_value,.prog6_value{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+.progress-circle1,.progress-circle2,.progress-circle3{
+transform: rotate(-90deg);
+margin-top: -2px;
+position: relative;
+}
+
+.progress-circle-back1,.progress-circle-back2,.progress-circle-back3{ 
+stroke: #87CEEB;
+stroke-width:7px;
+stroke-opacity:10;
+}
+
+.progress-circle-prog1,.progress-circle-prog2,.progress-circle-prog3 {
+fill: white;
+border-radius: 2px;
+stroke: #4d79ff;
+stroke-width: 7px;  
+stroke-dasharray: 3.42 999;    
+stroke-dashoffset: 0px;
+transition: stroke-dasharray 0.7s linear 0s;
+} 
+.meter { 
+    height: 25px; 
+    position: relative;
+    background: #87CEEB;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    width: 210px;
+}
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #4d79ff;
+    }
+.box5_image img{
+    width:50px;
+    height:30px;
+}
+.box6_icon_text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70px;
+    height: 43px;
+}
+.box6_image img{
+    width: 40px;
+    height: 40px;
+}
